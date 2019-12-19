@@ -1,13 +1,14 @@
 class PhpAT71 < Formula
   desc "General-purpose scripting language"
   homepage "https://secure.php.net/"
-  url "http://10.10.4.242:8081/php-7.1.25.tar.xz"
+  url "http://10.10.4.242:8081/php-7.1.32.tar.xz"
   sha256 "0fd8dad1903cd0b2d615a1fe4209f99e53b7292403c8ffa1919c0f4dd1eada88"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     sha256 "46df1961981fe57c163921f5ac363c1bcf2063993f654c45e7f7c731683bae56" => :mojave
     sha256 "deee221834493c7dd87c0759c9ab3916f499a9761bb036270736b240f85c50f1" => :high_sierra
+    sha256 "6e51a2fc610352438b2a1c40310468a1e2b5baf2fff43be77f9f408a9111590c" => :catalina
   end
 
   keg_only :versioned_formula
