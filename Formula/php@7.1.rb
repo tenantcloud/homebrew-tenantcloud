@@ -2,7 +2,7 @@ class PhpAT71 < Formula
   desc "General-purpose scripting language"
   homepage "https://secure.php.net/"
   url "http://10.10.4.242:8081/php-7.1.32.tar.xz"
-  sha256 "0fd8dad1903cd0b2d615a1fe4209f99e53b7292403c8ffa1919c0f4dd1eada88"
+  sha256 "7f38b5bdaae3184d325a8c70e86c010afcc33651d15faafe277a0db6d2ea2741"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
