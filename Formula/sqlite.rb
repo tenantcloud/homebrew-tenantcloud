@@ -1,15 +1,16 @@
 class Sqlite < Formula
   desc "Command-line interface for SQLite"
   homepage "https://sqlite.org/"
-  url "http://10.10.4.242:8081/sqlite-autoconf-3260000.tar.gz"
-  version "3.26.0"
-  sha256 "5daa6a3fb7d1e8c767cd59c4ded8da6e4b00c61d3b466d0685e35c4dd6d7bf5d"
+  url "http://10.10.4.242:8081/sqlite-autoconf-3300100.tar.gz"
+  version "3.30.1"
+  sha256 "8c5a50db089bd2a1b08dbc5b00d2027602ca7ff238ba7658fabca454d4298e60"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
     sha256 "810b44b487f59d73ef873406f44a1bd355516cea45a2886e2edc749e29e34cc8" => :mojave
     sha256 "cfa0666026d5360cd73cfb8a51de830fca81db8c6f85743222503204812a5954" => :high_sierra
+    sha256 "38c39121f7634ec563bb201b483f66cf567dfe61e02624ffb06f620f11158ab1" => :catalina
   end
 
   keg_only :provided_by_macos, "macOS provides an older sqlite3"

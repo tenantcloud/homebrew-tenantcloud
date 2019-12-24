@@ -11,6 +11,7 @@ class Gmp < Formula
     cellar :any
     sha256 "6802f7bc775422af1438c8004bd4fe31614cc83e52fb4091f5f53fb14562e503" => :mojave
     sha256 "8372dcd88e36997d7aacaffb555709348cc2c57703608b3471cbd71f5054f9ed" => :high_sierra
+    sha256 "2409417943fceda33eac12a8229fbf7b990eee18ee341b543be575550a077bb0" => :catalina
   end
 
   def install

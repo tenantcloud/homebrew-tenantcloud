@@ -10,6 +10,7 @@ class Autoconf < Formula
     rebuild 4
     sha256 "9724736d34773b6e41e2434ffa28fe79feccccf7b7786e54671441ca75115cdb" => :mojave
     sha256 "63957a3952b7af5496012b3819c9956822fd7d895d63339c23fdc65c502e1a40" => :high_sierra
+    sha256 "ca510b350e941fb9395522a03f9d2fb5df276085d806ceead763acb95889a368" => :catalina
   end
 
   def install

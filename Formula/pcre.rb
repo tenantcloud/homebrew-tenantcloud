@@ -1,14 +1,15 @@
 class Pcre < Formula
   desc "Perl compatible regular expressions library"
   homepage "https://www.pcre.org/"
-  url "http://10.10.4.242:8081/pcre-8.42.tar.bz2"
-  sha256 "2cd04b7c887808be030254e8d77de11d3fe9d4505c39d4b15d2664ffe8bf9301"
+  url "http://10.10.4.242:8081/pcre-8.43.tar.gz"
+  sha256 "0b8e7465dc5e98c757cc3650a20a7843ee4c3edf50aaf60bb33fd879690d2c73"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
     sha256 "f848e72c9a6ddfdd4e57d25df859830187cbb8e850996b22a84270a6590f56ff" => :mojave
     sha256 "b904c008c04003c3f40e30c6ee6a3b411aad81aa2f2684db9bf59bccd9d58b01" => :high_sierra
+    sha256 "3517eab75bf5bdb7798414d0af2aaaaf43edd248abc960b008d89b0a0958d537" => :catalina
   end
 
   head do

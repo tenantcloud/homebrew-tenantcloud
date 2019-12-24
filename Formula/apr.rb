@@ -1,14 +1,15 @@
 class Apr < Formula
   desc "Apache Portable Runtime library"
   homepage "https://apr.apache.org/"
-  url "http://10.10.4.242:8081/apr-1.6.5.tar.bz2"
-  sha256 "a67ca9fcf9c4ff59bce7f428a323c8b5e18667fdea7b0ebad47d194371b0a105"
+  url "http://10.10.4.242:8081/apr-1.7.0.tar.bz2"
+  sha256 "e2e148f0b2e99b8e5c6caa09f6d4fb4dd3e83f744aa72a952f94f5a14436f7ea"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
     sha256 "0111bfb48f0a020292bd503c2c8e1b374f9ea844c3cc32a0b35a670234adc055" => :mojave
     sha256 "314c8ebd08304a0f7dcebe3ca7fe5cc6b1c283b744f12d19d0931b91fac4fe20" => :high_sierra
+    sha256 "277c42fcf2f5ca298a14279d1325f58da89ee4ec2132b3ccca9bf8dfdc354c48" => :catalina
   end
 
   keg_only :provided_by_macos, "Apple's CLT package contains apr"

@@ -9,6 +9,7 @@ class Jansson < Formula
     cellar :any
     sha256 "79437c250f1b9fff4eab1a15385bbc38e5a29856b0efe3e5b0d68356d24d1f7b" => :mojave
     sha256 "aeb69f2744314df891be52ee4ff2fdb95e8991715a24f74858535063639f3491" => :high_sierra
+    sha256 "3f11cd288c2a9ae85cbeb4cd778fc3da1b55a1eb1962c9487705dd01c352d252" => :catalina
   end
 
   def install

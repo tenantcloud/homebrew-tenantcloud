@@ -1,15 +1,16 @@
 class Libpng < Formula
   desc "Library for manipulating PNG images"
   homepage "http://www.libpng.org/pub/png/libpng.html"
-  url "http://10.10.4.242:8081/libpng-1.6.36.tar.xz"
+  url "http://10.10.4.242:8081/libpng-1.6.37.tar.xz"
 #  mirror "https://sourceforge.mirrorservice.org/l/li/libpng/libpng16/1.6.36/libpng-1.6.36.tar.xz"
-  sha256 "eceb924c1fa6b79172fdfd008d335f0e59172a86a66481e09d4089df872aa319"
+  sha256 "505e70834d35383537b6491e7ae8641f1a4bed1876dbfe361201fc80868d88ca"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
     sha256 "7f6ac019c4413445dfa4d5ccbecfde564bf50b66ea32668bc360ad6edc78707d" => :mojave
     sha256 "b79c005157a135c42d42fbd7bf2f13537964a24225cc2bae51dd97908799fe08" => :high_sierra
+    sha256 "c8e74da602c21f978cd7ee3d489979b4fc6681e71f678a1d99012943ee3a909f" => :catalina
   end
 
   head do

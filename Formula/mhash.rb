@@ -9,6 +9,7 @@ class Mhash < Formula
     cellar :any
     sha256 "b4ee65a9ee33f5e19e085c477ec1634e2aa1626331eb2465484713759b264163" => :mojave
     sha256 "82f39af8037f070fafcad0280b151dc58e1b5b8c3ea1fb75f4ee372256d3ad2b" => :high_sierra
+    sha256 "d7d0a96656fbae5b279223d120bfe456c775a0c751090049bcf3ffffb2231761" => :catalina
   end
 
   def install

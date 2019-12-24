@@ -9,6 +9,7 @@ class CAres < Formula
     cellar :any
     sha256 "6c1782cd4a17e74f8f7b6258faa754ddcf9bf3a388cb862d6b5da8832668f9ef" => :mojave
     sha256 "45fcb6953de6f43026bc28f3d8798ced5e5a0bbd28c18240fc0e9bc66174fc1e" => :high_sierra
+    sha256 "cab176e28c4fb73ab44c4695ad2dfa154f139f27d7db5224fb30726cbf412855" => :catalina
   end
 
   head do

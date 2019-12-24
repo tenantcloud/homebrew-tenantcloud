@@ -1,16 +1,17 @@
 class Readline < Formula
   desc "Library for command-line editing"
   homepage "https://tiswww.case.edu/php/chet/readline/rltop.html"
-  url "http://10.10.4.242:8081/readline-7.0.tar.gz"
+  url "http://10.10.4.242:8081/readline-8.0.tar.gz"
 #  mirror "https://ftpmirror.gnu.org/readline/readline-7.0.tar.gz"
-  version "7.0.5"
-  sha256 "750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334"
+  version "8.0.0"
+  sha256 "e339f51971478d369f8a053a330a190781acb9864cf4c541060f12078948e461"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
     sha256 "5976a79f0dbd5ccb2a261f692763319d612309caa2b8cf703f209270764c657c" => :mojave
     sha256 "0cc8fcf8ee733e41c40b859a09eb00f723222a40398fdd15d32891df1eca2eef" => :high_sierra
+    sha256 "ab3c966f4cae7d0f3ecc5688bb989820c3261f5ed547a08c84186ba7f53bdd9c" => :catalina
   end
 
   keg_only :shadowed_by_macos, <<~EOS

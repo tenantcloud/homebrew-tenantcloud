@@ -1,13 +1,14 @@
 class Libzip < Formula
   desc "C library for reading, creating, and modifying zip archives"
   homepage "https://libzip.org/"
-  url "http://10.10.4.242:8081/libzip-1.5.1.tar.gz"
-  sha256 "47eaa45faa448c72bd6906e5a096846c469a185f293cafd8456abb165841b3f2"
+  url "http://10.10.4.242:8081/libzip-1.5.2.tar.gz"
+  sha256 "be694a4abb2ffe5ec02074146757c8b56084dbcebf329123c84b205417435e15"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     sha256 "c3527d9364aaca72f5bbd0486962639b421efcbd7ba7209b8a14a7900e52607b" => :mojave
     sha256 "4ffb9ac04f1fc2c98e5ba902999ed6f4bc5d7d9133d22fc183fd8fa13b7fd9be" => :high_sierra
+    sha256 "48097805d906d0c6febd72e06e2ba4c7de3fb98408c98538b98a16bf1e7bc066" => :catalina
   end
 
   depends_on "tenantcloud/tenantcloud/cmake" => :build

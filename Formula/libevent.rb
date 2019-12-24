@@ -1,14 +1,15 @@
 class Libevent < Formula
   desc "Asynchronous event library"
   homepage "https://libevent.org/"
-  url "http://10.10.4.242:8081/libevent-2.1.8-stable.tar.gz"
-  sha256 "316ddb401745ac5d222d7c529ef1eada12f58f6376a66c1118eee803cb70f83d"
+  url "http://10.10.4.242:8081/libevent-2.1.11-stable.tar.gz"
+  sha256 "a65bac6202ea8c5609fd5c7e480e6d25de467ea1917c08290c521752f147283d"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
     sha256 "9ab81f4ca9902042f7ea95d02bf36394c5cdc11d715b7f928badc9cf5724ca8b" => :mojave
     sha256 "61a8cf2df6d58f79678fad0f798b6a9d368245097f908e2f911f25cb3f7916cf" => :high_sierra
+    sha256 "9d262f9ffb2268340a89c713826d8ca068bcac06c30baf49e6184ab4660d977a" => :catalina
   end
 
   depends_on "tenantcloud/tenantcloud/autoconf" => :build

@@ -9,6 +9,7 @@ class Mcrypt < Formula
     rebuild 1
     sha256 "de99a56fa872e7e30958cb6268af59c03e788791445a8efd71c87ac9efb2da02" => :mojave
     sha256 "892bc8fe3e910389a4499a3466e240740d9eba2eae92974cb0d8c7ba0182d635" => :high_sierra
+    sha256 "c9d3313218375e8bca6e22b00fcb47f11550c386ae64422bb59869af161cf6eb" => :catalina
   end
 
   depends_on "tenantcloud/tenantcloud/mhash"

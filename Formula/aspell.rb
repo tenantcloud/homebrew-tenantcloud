@@ -1,15 +1,16 @@
 class Aspell < Formula
   desc "Spell checker with better logic than ispell"
   homepage "http://aspell.net/"
-  url "http://10.10.4.242:8081/aspell-0.60.6.1.tar.gz"
+  url "http://10.10.4.242:8081/aspell-0.60.8.tar.gz"
 #  mirror "https://ftpmirror.gnu.org/aspell/aspell-0.60.6.1.tar.gz"
-  sha256 "f52583a83a63633701c5f71db3dc40aab87b7f76b29723aeb27941eff42df6e1"
+  sha256 "f9b77e515334a751b2e60daab5db23499e26c9209f5e7b7443b05235ad0226f2"
   revision 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     sha256 "f0264ded1cf174eb37c8a4175bc5f900d8abbe2d06e7f8109aa96106dd044f25" => :mojave
     sha256 "d5927b312520252d7634902269336fe28148dac0d986e7bb0883327233462f01" => :high_sierra
+    sha256 "f34a5b53fa80f6f0ea3cef83d04eceed93f918153463e0b77a596374a842249d" => :catalina
   end
 
   # Dictionaries installed by default: en, de, es, fr

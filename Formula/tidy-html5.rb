@@ -10,6 +10,7 @@ class TidyHtml5 < Formula
     cellar :any
     sha256 "bd3ca7dc82a913c8576716cbcc957260251132f6dd7b8c526c9ef0c4674faf0f" => :mojave
     sha256 "af9633f1578980fe3d4351c3d71b4b83cc79f814d87310e4b7d05830c53c9621" => :high_sierra
+    sha256 "fb2134180fbdb92cc10f3fad33c769073adceb7796e465db7dbc3778f7d3547a" => :catalina
   end
 
   depends_on "tenantcloud/tenantcloud/cmake" => :build

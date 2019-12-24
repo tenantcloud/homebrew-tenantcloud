@@ -13,6 +13,7 @@ class Libtool < Formula
     cellar :any
     sha256 "c92ab35c3706c255a36b733aa7a475159da9cf375c275d230fd6a7802a94e4dc" => :mojave
     sha256 "ebb50367eb2336ee317841587e24690de124fb2c3e4d346405e9b41c4e6120ae" => :high_sierra
+    sha256 "38212486e78db33048438cffe38b6914f13553e7bb8c7d3d2fbecb18a6481d3c" => :catalina
   end
 
   def install
