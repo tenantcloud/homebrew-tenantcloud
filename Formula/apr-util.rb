@@ -1,10 +1,10 @@
 class AprUtil < Formula
   desc "Companion library to apr, the Apache Portable Runtime library"
   homepage "https://apr.apache.org/"
-   url "http://10.10.4.242:8081/apr-util-1.6.1.tar.bz2"
+   url "http://10.10.4.242:8081/apr-util-1.6.1_3.tar.gz"
 
-  sha256 "d3e12f7b6ad12687572a3a39475545a072608f4ba03a6ce8a3778f607dd0035b"
-  revision 1
+  sha256 "5daafb99700b157cbfddb160f90e3151f98647b40351e038edf3e21dc7306416"
+  revision 3
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
