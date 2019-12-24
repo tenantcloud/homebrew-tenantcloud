@@ -4,7 +4,7 @@ class Aspell < Formula
   url "http://10.10.4.242:8081/aspell-0.60.8.tar.gz"
 #  mirror "https://ftpmirror.gnu.org/aspell/aspell-0.60.6.1.tar.gz"
   sha256 "f9b77e515334a751b2e60daab5db23499e26c9209f5e7b7443b05235ad0226f2"
-  revision 1
+#  revision 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
