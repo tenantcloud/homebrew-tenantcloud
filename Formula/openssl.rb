@@ -1,17 +1,18 @@
 class Openssl < Formula
   desc "SSL/TLS cryptography library"
   homepage "https://openssl.org/"
-  url "http://10.10.4.242:8081/openssl-1.0.2t.tar.gz"
+  url "http://10.10.4.242:8081/openssl-1.1.1d.tar.gz"
 #  mirror "https://dl.bintray.com/homebrew/mirror/openssl--1.0.2q.tar.gz"
 #  mirror "https://www.mirrorservice.org/sites/ftp.openssl.org/source/openssl-1.0.2q.tar.gz"
 #  mirror "http://artfiles.org/openssl.org/source/openssl-1.0.2q.tar.gz"
-  sha256 "14cb464efe7ac6b54799b34456bd69558a749a4931ecfd9cf9f71d7881cac7bc"
+  sha256 "1e3a91bc1f9dfce01af26026f856e064eab4c8ee0a8f457b5ae30b40b8b711f2"
+  version_scheme 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     sha256 "cdbee2befd8f2e178ff0c5f9e8796a73a7de20055aae51cba7cc749429e8c90f" => :mojave
     sha256 "d3ac5de6ccd9c604a5f2b8582ebd721ab421c0fdbfefa5a4b1190f83277f2c27" => :high_sierra
-    sha256 "c9c5e017edabe41ae55ed10ba5b94b834ee494e7f362d7245fbb0b137c876810" => :catalina
+    sha256 "d7f992ebfd78f80828051f6dc6a1a99aed405f86b0f39ea651fd0afeadd1b0f4" => :catalina
   end
 
   keg_only :provided_by_macos,
