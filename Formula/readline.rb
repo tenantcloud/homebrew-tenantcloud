@@ -3,7 +3,7 @@ class Readline < Formula
   homepage "https://tiswww.case.edu/php/chet/readline/rltop.html"
   url "http://10.10.4.242:8081/readline-8.0.tar.gz"
 #  mirror "https://ftpmirror.gnu.org/readline/readline-7.0.tar.gz"
-  version "8.0.0"
+  version "8.0.1"
   sha256 "e339f51971478d369f8a053a330a190781acb9864cf4c541060f12078948e461"
 
   bottle do

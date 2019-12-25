@@ -3,6 +3,7 @@ class Freetds < Formula
   homepage "http://www.freetds.org/"
   url "http://10.10.4.242:8081/freetds-1.1.15.tar.gz"
   sha256 "ebeb9060bcfe54f13ab0fbf8cb72ac95cc6cefbe728a30247516d55334d66a03"
+  revision 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
