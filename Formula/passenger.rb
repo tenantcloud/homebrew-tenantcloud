@@ -1,14 +1,16 @@
 class Passenger < Formula
   desc "Server for Ruby, Python, and Node.js apps via Apache/NGINX"
   homepage "https://www.phusionpassenger.com/"
-  url "http://10.10.4.242:8081/passenger-6.0.0.tar.gz"
-  sha256 "3f826e55065bb69ff5cc945b7b8ab5eb69f957e108053d15401c2ea059321b83"
+  url "http://10.10.4.242:8081/passenger-6.0.4.tar.gz"
+  sha256 "ec1e4b555c176642c1c316897177d54b6f7d369490280e8ee3e54644e40b250b"
+  revision 2
   head "https://github.com/phusion/passenger.git", :branch => "stable-6.0"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     sha256 "215b84b960021443f48c9425299dacce7532140e0c4b560a012354116ff6a996" => :mojave
     sha256 "9d7dc31d44f43c9f09da7aba58c07ee0a9dd97c49655f917c443a6f1e8a2fd32" => :high_sierra
+    sha256 "b0c8e7ace9e24fcae2e4cfe107538378646677d8bf87776d6dd8c38e6211df42" => :catalina
   end
 
   option "without-apache2-module", "Disable Apache2 module"
