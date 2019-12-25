@@ -32,7 +32,7 @@ class Nghttp2 < Formula
   depends_on "tenantcloud/tenantcloud/libev"
   depends_on "tenantcloud/tenantcloud/libevent"
   depends_on "tenantcloud/tenantcloud/libxml2" if MacOS.version <= :lion
-  depends_on "tenantcloud/tenantcloud/openssl"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
   depends_on "tenantcloud/tenantcloud/python" => :optional
 
   resource "Cython" do

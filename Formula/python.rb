@@ -24,7 +24,7 @@ class Python < Formula
 
   depends_on "tenantcloud/tenantcloud/pkg-config" => :build
   depends_on "tenantcloud/tenantcloud/gdbm"
-  depends_on "tenantcloud/tenantcloud/openssl"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
   depends_on "tenantcloud/tenantcloud/readline"
   depends_on "tenantcloud/tenantcloud/sqlite"
   depends_on "tenantcloud/tenantcloud/xz"
@@ -223,9 +223,9 @@ class Python < Formula
     end
 
     # Help distutils find brewed stuff when building extensions
-    include_dirs = [HOMEBREW_PREFIX/"include", Formula["openssl"].opt_include,
+    include_dirs = [HOMEBREW_PREFIX/"include", Formula["openssl@1.1"].opt_include,
                     Formula["sqlite"].opt_include]
-    library_dirs = [HOMEBREW_PREFIX/"lib", Formula["openssl"].opt_lib,
+    library_dirs = [HOMEBREW_PREFIX/"lib", Formula["openssl@1.1"].opt_lib,
                     Formula["sqlite"].opt_lib]
 
     cfg = prefix/"Frameworks/Python.framework/Versions/#{xy}/lib/python#{xy}/distutils/distutils.cfg"

@@ -15,7 +15,7 @@ class Httpd < Formula
   depends_on "tenantcloud/tenantcloud/apr-util"
   depends_on "tenantcloud/tenantcloud/brotli"
   depends_on "tenantcloud/tenantcloud/nghttp2"
-  depends_on "tenantcloud/tenantcloud/openssl"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
   depends_on "tenantcloud/tenantcloud/pcre"
 
   def install

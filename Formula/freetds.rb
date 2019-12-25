@@ -24,7 +24,7 @@ class Freetds < Formula
   option "with-msdblib", "Enable Microsoft behavior in the DB-Library API where it diverges from Sybase's"
 
   depends_on "tenantcloud/tenantcloud/pkg-config" => :build
-  depends_on "tenantcloud/tenantcloud/openssl"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
   depends_on "tenantcloud/tenantcloud/unixodbc"
 
   def install

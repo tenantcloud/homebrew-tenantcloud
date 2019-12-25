@@ -18,7 +18,7 @@ class Libevent < Formula
   depends_on "tenantcloud/tenantcloud/doxygen" => :build
   depends_on "tenantcloud/tenantcloud/libtool" => :build
   depends_on "tenantcloud/tenantcloud/pkg-config" => :build
-  depends_on "tenantcloud/tenantcloud/openssl"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
 
   conflicts_with "pincaster",
     :because => "both install `event_rpcgen.py` binaries"

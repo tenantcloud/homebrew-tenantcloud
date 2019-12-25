@@ -17,7 +17,7 @@ class CurlOpenssl < Formula
   depends_on "tenantcloud/tenantcloud/brotli"
   depends_on "tenantcloud/tenantcloud/nghttp2"
   depends_on "tenantcloud/tenantcloud/openldap"
-  depends_on "tenantcloud/tenantcloud/openssl"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
 
   def install
     # Allow to build on Lion, lowering from the upstream setting of 10.8

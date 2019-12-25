@@ -15,7 +15,7 @@ class Nginx < Formula
 
   option "with-passenger", "Compile with support for Phusion Passenger module"
 
-  depends_on "tenantcloud/tenantcloud/openssl" # don't switch to 1.1 until passenger is switched, too
+  depends_on "tenantcloud/tenantcloud/openssl@1.1" # don't switch to 1.1 until passenger is switched, too
   depends_on "tenantcloud/tenantcloud/pcre"
   depends_on "tenantcloud/tenantcloud/passenger" => :optional
 
@@ -26,11 +26,11 @@ class Nginx < Formula
       s.gsub! "    #}\n\n}", "    #}\n    include servers/*;\n}"
     end
 
-    openssl = Formula["openssl"]
+    openssl = Formula["openssl@1.1"]
     pcre = Formula["pcre"]
 
-    cc_opt = "-I#{pcre.opt_include} -I#{openssl.opt_include}"
-    ld_opt = "-L#{pcre.opt_lib} -L#{openssl.opt_lib}"
+    cc_opt = "-I#{pcre.opt_include} -I#{openssl@1.1.opt_include}"
+    ld_opt = "-L#{pcre.opt_lib} -L#{openssl@1.1.opt_lib}"
 
     args = %W[
       --prefix=#{prefix}

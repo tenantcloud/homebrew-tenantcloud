@@ -20,7 +20,7 @@ class Libssh2 < Formula
     depends_on "tenantcloud/tenantcloud/libtool" => :build
   end
 
-  depends_on "tenantcloud/tenantcloud/openssl"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
 
   def install
     args = %W[
@@ -29,9 +29,9 @@ class Libssh2 < Formula
       --disable-dependency-tracking
       --disable-silent-rules
       --disable-examples-build
-      --with-openssl
+      --with-openssl@1.1
       --with-libz
-      --with-libssl-prefix=#{Formula["openssl"].opt_prefix}
+      --with-libssl-prefix=#{Formula["openssl@1.1"].opt_prefix}
     ]
 
     system "./buildconf" if build.head?
