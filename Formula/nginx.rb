@@ -29,8 +29,8 @@ class Nginx < Formula
     openssl = Formula["openssl@1.1"]
     pcre = Formula["pcre"]
 
-    cc_opt = "-I#{pcre.opt_include} -I#{openssl@1.1.opt_include}"
-    ld_opt = "-L#{pcre.opt_lib} -L#{openssl@1.1.opt_lib}"
+    cc_opt = "-I#{pcre.opt_include} -I#{openssl.opt_include}"
+    ld_opt = "-L#{pcre.opt_lib} -L#{openssl.opt_lib}"
 
     args = %W[
       --prefix=#{prefix}
