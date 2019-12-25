@@ -1,15 +1,15 @@
 class Doxygen < Formula
   desc "Generate documentation for several programming languages"
   homepage "http://www.doxygen.org/"
-  url "http://10.10.4.242:8081/doxygen-1.8.15.src.tar.gz"
+  url "http://10.10.4.242:8081/doxygen-1.8.16.src.tar.gz"
 #  mirror "https://downloads.sourceforge.net/project/doxygen/rel-1.8.15/doxygen-1.8.15.src.tar.gz"
-  sha256 "bd9c0ec462b6a9b5b41ede97bede5458e0d7bb40d4cfa27f6f622eb33c59245d"
+  sha256 "ff981fb6f5db4af9deb1dd0c0d9325e0f9ba807d17bd5750636595cf16da3c82"
   head "https://github.com/doxygen/doxygen.git"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any_skip_relocation
-    sha256 "e3144ca8ebdb1abd668cb4eee36feb3bb5d545bc3d056f207109d2ae57013f5c" => :mojave
+    sha256 "709545ed8f509c407d1a8ac2f36f396f783bd732c98ed18d79e57aa26e79fd74" => :mojave
     sha256 "b6b7234f2644de37a48d7459f3b360127c4e92df8bb56d48b9a4128f58eaf90b" => :high_sierra
   end
 

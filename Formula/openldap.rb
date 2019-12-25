@@ -3,6 +3,7 @@ class Openldap < Formula
   homepage "https://www.openldap.org/software/"
   url "http://10.10.4.242:8081/openldap-2.4.48.tgz"
   sha256 "d9523ffcab5cd14b709fcf3cb4d04e8bc76bb8970113255f372bc74954c6074d"
+  revision 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"

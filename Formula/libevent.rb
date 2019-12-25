@@ -3,6 +3,7 @@ class Libevent < Formula
   homepage "https://libevent.org/"
   url "http://10.10.4.242:8081/libevent-2.1.11-stable.tar.gz"
   sha256 "a65bac6202ea8c5609fd5c7e480e6d25de467ea1917c08290c521752f147283d"
+  revision 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
