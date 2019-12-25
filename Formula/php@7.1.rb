@@ -33,7 +33,7 @@ class PhpAT71 < Formula
   depends_on "tenantcloud/tenantcloud/libzip"
   depends_on "tenantcloud/tenantcloud/mcrypt"
   depends_on "tenantcloud/tenantcloud/openldap"
-  depends_on "tenantcloud/tenantcloud/openssl"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
   depends_on "tenantcloud/tenantcloud/pcre"
   depends_on "tenantcloud/tenantcloud/sqlite"
   depends_on "tenantcloud/tenantcloud/tidy-html5"
