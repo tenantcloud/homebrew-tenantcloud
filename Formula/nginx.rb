@@ -3,23 +3,25 @@ class Nginx < Formula
   homepage "https://nginx.org/"
   # Use "mainline" releases only (odd minor version number), not "stable"
   # See https://www.nginx.com/blog/nginx-1-12-1-13-released/ for why
-  url "http://10.10.4.242:8081/nginx-1.15.7.tar.gz"
-  sha256 "8f22ea2f6c0e0a221b6ddc02b6428a3ff708e2ad55f9361102b1c9f4142bdf93"
+  url "http://10.10.4.242:8081/nginx-1.17.6.tar.gz"
+  sha256 "3cb4a5314dc0ab0a4e8a7b51ae17c027133417a45cc6c5a96e3dd80141c237b6"
   head "https://hg.nginx.org/nginx/", :using => :hg
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
+    sha256 "8ccb0756081f9fc73296ba3a3e68d2f18bc032c39acf0614abc9bfbbceb5e1e2" => :catalina
     sha256 "4b1fbbd533d58e2c755bc419612eada94ffb094694dfd226dc68d84f8d9cc383" => :mojave
     sha256 "4818e2fd38d7dd1587d0a9eb8532e43015593a1afb29ad16f784e2792ea9311f" => :high_sierra
   end
 
-  option "with-passenger", "Compile with support for Phusion Passenger module"
-
-  depends_on "tenantcloud/tenantcloud/openssl@1.1" # don't switch to 1.1 until passenger is switched, too
-  depends_on "tenantcloud/tenantcloud/pcre"
-  depends_on "tenantcloud/tenantcloud/passenger" => :optional
+  depends_on "openssl@1.1"
+  depends_on "pcre"
 
   def install
+    # keep clean copy of source for compiling dynamic modules e.g. passenger
+    (pkgshare/"src").mkpath
+    system "tar", "-cJf", (pkgshare/"src/src.tar.xz"), "--options", "compression-level=9", "."
+
     # Changes default port to 8080
     inreplace "conf/nginx.conf" do |s|
       s.gsub! "listen       80;", "listen       8080;"
@@ -47,6 +49,7 @@ class Nginx < Formula
       --http-scgi-temp-path=#{var}/run/nginx/scgi_temp
       --http-log-path=#{var}/log/nginx/access.log
       --error-log-path=#{var}/log/nginx/error.log
+      --with-compat
       --with-debug
       --with-http_addition_module
       --with-http_auth_request_module
@@ -75,10 +78,7 @@ class Nginx < Formula
       --with-stream_ssl_preread_module
     ]
 
-    if build.with? "passenger"
-      nginx_ext = `#{Formula["passenger"].opt_bin}/passenger-config --nginx-addon-dir`.chomp
-      args << "--add-module=#{nginx_ext}"
-    end
+    (pkgshare/"src/configure_args.txt").write args.join("\n")
 
     if build.head?
       system "./auto/configure", *args
@@ -123,22 +123,13 @@ class Nginx < Formula
     end
   end
 
-  def passenger_caveats; <<~EOS
-    To activate Phusion Passenger, add this to #{etc}/nginx/nginx.conf, inside the 'http' context:
-      passenger_root #{Formula["passenger"].opt_libexec}/src/ruby_supportlib/phusion_passenger/locations.ini;
-      passenger_ruby /usr/bin/ruby;
-  EOS
-  end
-
   def caveats
-    s = <<~EOS
+    <<~EOS
       Docroot is: #{var}/www
       The default port has been set in #{etc}/nginx/nginx.conf to 8080 so that
       nginx can run without sudo.
       nginx will load all files in #{etc}/nginx/servers/.
     EOS
-    s << "\n" << passenger_caveats if build.with? "passenger"
-    s
   end
 
   plist_options :manual => "nginx"

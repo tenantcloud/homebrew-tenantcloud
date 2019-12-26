@@ -35,7 +35,6 @@ class PhpAT71 < Formula
   depends_on "tenantcloud/tenantcloud/openldap"
   depends_on "tenantcloud/tenantcloud/openssl@1.1"
   depends_on "tenantcloud/tenantcloud/pcre"
-#  depends_on "tenantcloud/tenantcloud/rtmpdump"
   depends_on "tenantcloud/tenantcloud/sqlite"
   depends_on "tenantcloud/tenantcloud/tidy-html5"
   depends_on "tenantcloud/tenantcloud/unixodbc"
@@ -157,7 +156,6 @@ class PhpAT71 < Formula
       --with-pic
       --with-png-dir=#{Formula["libpng"].opt_prefix}
       --with-pspell=#{Formula["aspell"].opt_prefix}
-      --with-librtmp
       --with-sqlite3=#{Formula["sqlite"].opt_prefix}
       --with-tidy=#{Formula["tidy-html5"].opt_prefix}
       --with-unixODBC=#{Formula["unixodbc"].opt_prefix}

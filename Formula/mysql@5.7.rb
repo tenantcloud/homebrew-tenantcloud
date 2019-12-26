@@ -1,12 +1,13 @@
 class MysqlAT57 < Formula
   desc "Open source relational database management system"
   homepage "https://dev.mysql.com/doc/refman/5.7/en/"
-  url "http://10.10.4.242:8081/mysql-boost-5.7.24.tar.gz"
-  sha256 "b980dced9c9eb3385cca44870facc220504ca011196c5a19c2bfe43d3f5d6212"
+  url "http://10.10.4.242:8081/mysql-boost-5.7.28.tar.gz"
+  sha256 "f16399315212117c08f9bdf8a0d682728b2ce82d691bcfbf25a770f413b6f2da"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    rebuild 1
+#    rebuild 1
+    sha256 "25979cdf7664ceabbe69c4423317612e51cb2dc73d4e5cb4e24abefc29aa018a" => :catalina
     sha256 "729dd1d4a74b33c896db22208cd2a32056f669229fe2af755f250267c3a2365a" => :mojave
     sha256 "667541324e582ceb8c1adb66333e41c5fdb7b054fb25d8203dcfe5dd3f3f0f8b" => :high_sierra
   end

@@ -1,13 +1,14 @@
 class Redis < Formula
   desc "Persistent key-value database, with built-in net interface"
   homepage "https://redis.io/"
-  url "http://10.10.4.242:8081/redis-4.0.11.tar.gz"
-  sha256 "7e4d275eec261d06497521b4caa4bb7d10fa47b3e43a50a1c737bb6034d7364c"
+  url "http://10.10.4.242:8081/redis-5.0.7.tar.gz"
+  sha256 "61db74eabf6801f057fd24b590232f2f337d422280fd19486eca03be87d3a82b"
   head "https://github.com/antirez/redis.git", :branch => "unstable"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any_skip_relocation
+    sha256 "7a50c626ad90c40fd315f7f053460f0c6701cc2b776a1b3e83dc44698936cd0f" => :catalina
     sha256 "82a4e9157e338f0bf22a4228d2ad215326476b9d05dad30e29ea459becbf23e3" => :mojave
     sha256 "85edd8937aa7098e44234601132e63f364c32e1cefecc9c10cdc1f8643672eb8" => :high_sierra
   end
