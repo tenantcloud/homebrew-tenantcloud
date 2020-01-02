@@ -1,13 +1,13 @@
 class Libssh2 < Formula
   desc "C library implementing the SSH2 protocol"
   homepage "https://libssh2.org/"
-  url "http://10.10.4.242:8081/libssh2-1.8.0.tar.gz"
-  sha256 "39f34e2f6835f4b992cafe8625073a88e5a28ba78f83e8099610a7b3af4676d4"
+  url "http://10.10.4.242:8081/libssh2-1.9.0.tar.gz"
+  sha256 "d5fb8bd563305fd1074dda90bd053fb2d29fc4bce048d182f96eaa466dfadafd"
+  revision 1
 
   bottle do
-    root_url "http://10.10.4.242:8081/bottles"
     cellar :any
-    rebuild 1
+    sha256 "2c4dcf8149663f9a133deac5bc42ce308d1ced90227cac391ca30b0ab2d381f9" => :catalina
     sha256 "9705f2a153a854b15bff89663eca46dd211f5fc025031b9851d64874f83c8f53" => :mojave
     sha256 "22327eb5bbff660935db0c5106d5a43069ee23e5cb33d5125bad4e144e83ee34" => :high_sierra
   end
@@ -15,12 +15,12 @@ class Libssh2 < Formula
   head do
     url "https://github.com/libssh2/libssh2.git"
 
-    depends_on "tenantcloud/tenantcloud/autoconf" => :build
-    depends_on "tenantcloud/tenantcloud/automake" => :build
-    depends_on "tenantcloud/tenantcloud/libtool" => :build
+    depends_on "autoconf" => :build
+    depends_on "automake" => :build
+    depends_on "libtool" => :build
   end
 
-  depends_on "tenantcloud/tenantcloud/openssl@1.1"
+  depends_on "openssl@1.1"
 
   def install
     args = %W[
@@ -29,7 +29,7 @@ class Libssh2 < Formula
       --disable-dependency-tracking
       --disable-silent-rules
       --disable-examples-build
-      --with-openssl@1.1
+      --with-openssl
       --with-libz
       --with-libssl-prefix=#{Formula["openssl@1.1"].opt_prefix}
     ]
