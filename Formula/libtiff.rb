@@ -1,15 +1,16 @@
 class Libtiff < Formula
   desc "TIFF library and utilities"
   homepage "http://libtiff.maptools.org/"
-  url "http://10.10.4.242:8081/tiff-4.0.10.tar.gz"
+  url "http://10.10.4.242:8081/tiff-4.1.0.tar.gz"
 #  mirror "https://fossies.org/linux/misc/tiff-4.0.10.tar.gz"
   sha256 "2c52d11ccaf767457db0c46795d9c7d1a8d8f76f68b0b800a3dfe45786b996e4"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
-    sha256 "9fc324e360e2b5fe46ce13bd97bc1a338cf08c8d60dca4241bcc8c2efcadb99a" => :mojave
-    sha256 "59a22ff44e382d59b062a0cd03336f0ec4b8846a3eb8b1ca777150ca703dd0cd" => :high_sierra
+    sha256 "449bd9123e73e4c4eab85b77322d769cc9df0f6adab05e9b9319b012d1215a68" => :catalina
+    sha256 "dd060521aa30fb2f4678c9ebab6362104a9a705d098a90eac4059743c93c8c16" => :mojave
+    sha256 "577c2754b00fc8a5009e08bfd7af630ab4812250508df20a1c92d3c7ae678b94" => :high_sierra
   end
 
   depends_on "tenantcloud/tenantcloud/jpeg"
