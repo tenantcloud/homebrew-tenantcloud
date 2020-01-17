@@ -18,7 +18,7 @@ class Openjpeg < Formula
   depends_on "tenantcloud/tenantcloud/libpng"
   depends_on "tenantcloud/tenantcloud/libtiff"
   depends_on "tenantcloud/tenantcloud/little-cms2"
-x
+
   def install
     system "cmake", ".", *std_cmake_args, "-DBUILD_DOC=ON"
     system "make", "install"
