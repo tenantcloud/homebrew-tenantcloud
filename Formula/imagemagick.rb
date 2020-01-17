@@ -19,10 +19,10 @@ class Imagemagick < Formula
   depends_on "tenantcloud/tenantcloud/libtiff"
   depends_on "tenantcloud/tenantcloud/libtool"
   depends_on "tenantcloud/tenantcloud/little-cms2"
-  depends_on "openexr"
-  depends_on "openjpeg"
+  depends_on "tenantcloud/tenantcloud/openexr"
+  depends_on "tenantcloud/tenantcloud/openjpeg"
   depends_on "tenantcloud/tenantcloud/webp"
-  depends_on "xz"
+  depends_on "tenantcloud/tenantcloud/xz"
   uses_from_macos "bzip2"
   uses_from_macos "libxml2"
 
