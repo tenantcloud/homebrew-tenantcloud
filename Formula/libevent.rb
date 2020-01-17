@@ -20,8 +20,8 @@ class Libevent < Formula
   depends_on "tenantcloud/tenantcloud/pkg-config" => :build
   depends_on "tenantcloud/tenantcloud/openssl@1.1"
 
-  conflicts_with "pincaster",
-    :because => "both install `event_rpcgen.py` binaries"
+#  conflicts_with "pincaster",
+#    :because => "both install `event_rpcgen.py` binaries"
 
   def install
     inreplace "Doxyfile", /GENERATE_MAN\s*=\s*NO/, "GENERATE_MAN = YES"
