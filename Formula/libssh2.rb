@@ -15,12 +15,12 @@ class Libssh2 < Formula
   head do
     url "https://github.com/libssh2/libssh2.git"
 
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-    depends_on "libtool" => :build
+    depends_on "tenantcloud/tenantcloud/autoconf" => :build
+    depends_on "tenantcloud/tenantcloud/automake" => :build
+    depends_on "tenantcloud/tenantcloud/libtool" => :build
   end
 
-  depends_on "openssl@1.1"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
 
   def install
     args = %W[
@@ -31,7 +31,7 @@ class Libssh2 < Formula
       --disable-examples-build
       --with-openssl
       --with-libz
-      --with-libssl-prefix=#{Formula["openssl@1.1"].opt_prefix}
+      --with-libssl-prefix=#{Formula["tenantcloud/tenantcloud/openssl@1.1"].opt_prefix}
     ]
 
     system "./buildconf" if build.head?
