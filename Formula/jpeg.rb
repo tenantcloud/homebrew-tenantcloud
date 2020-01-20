@@ -1,17 +1,14 @@
 class Jpeg < Formula
   desc "Image manipulation library"
   homepage "https://www.ijg.org/"
-  url "http://10.10.4.242:8081/jpegsrc.v9c.tar.gz"
-#  mirror "https://dl.bintray.com/homebrew/mirror/jpeg-9c.tar.gz"
-#  mirror "https://fossies.org/linux/misc/jpegsrc.v9c.tar.gz"
-  sha256 "650250979303a649e21f87b5ccd02672af1ea6954b911342ea491f351ceb7122"
+  url "http://10.10.4.242:8081/jpegsrc.v9d.tar.gz"
+  sha256 "99cb50e48a4556bc571dadd27931955ff458aae32f68c4d9c39d624693f69c32"
 
   bottle do
-    root_url "http://10.10.4.242:8081/bottles"
     cellar :any
-    sha256 "1daa0fc0c197d96dd4e1afddb9ad576951a15aafd6b85138b8a60817d1d8173c" => :mojave
-    sha256 "178200fd8aa50d5db22c5faa4ca403652d2bf912616c34dfbc6b035a456c2fc6" => :high_sierra
-    sha256 "b94875481e23ee43f98c5d87085e47821a0100e2d79da309c31303f4c933f076" => :catalina
+    sha256 "8f7b82a952fb3937889c7f22da1403e5338cd320495917eb26b0c5b2e614791c" => :catalina
+    sha256 "b931e7725c83275c56f962b51b83c10f31a01ac8d823c6722edaf16d893970b1" => :mojave
+    sha256 "64286932634fbe1e0d07eacda334d2f4967b20bce0737424df56ec5eaa34ccca" => :high_sierra
   end
 
   def install
