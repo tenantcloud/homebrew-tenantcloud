@@ -1,15 +1,14 @@
 class Webp < Formula
   desc "Image format providing lossless and lossy compression for web images"
   homepage "https://developers.google.com/speed/webp/"
-  url "http://10.10.4.242:8081/libwebp-1.0.3.tar.gz"
-  sha256 "e20a07865c8697bba00aebccc6f54912d6bc333bb4d604e6b07491c1a226b34f"
+  url "http://10.10.4.242:8081/libwebp-1.1.0.tar.gz"
+  sha256 "98a052268cc4d5ece27f76572a7f50293f439c17a98e67c4ea0c7ed6f50ef043"
 
   bottle do
-    root_url "http://10.10.4.242:8081/bottles"
     cellar :any
-    sha256 "e481c511582d5e23078c6a19fb224afe625422a457eaaeea8183c229947a9ced" => :mojave
-    sha256 "d045f6c3963381fb509c8f752e89a5d48c623d6622bff8c68c8f4327924796ff" => :high_sierra
-    sha256 "6bce8ee7b2b0cb615ea73deed3de3f345bcec05720222bd23882d4d8b7424fb6" => :catalina
+    sha256 "27c76a7054277ff5a2e844c5996fc731d8644acbaaa505d35dba42c4a48a0c51" => :catalina
+    sha256 "819c76cbf75c1d1d51db88602b69a9d9cd24975cc65834a9eb5a804c4b96ee35" => :mojave
+    sha256 "069cac577750d53095cc43a05a3eab54310c35ea819ea05fa6bf425bcb0313d2" => :high_sierra
   end
 
   head do
@@ -21,6 +20,7 @@ class Webp < Formula
 
   depends_on "tenantcloud/tenantcloud/jpeg"
   depends_on "tenantcloud/tenantcloud/libpng"
+  depends_on "tenantcloud/tenantcloud/libtiff"
 
   def install
     system "./autogen.sh" if build.head?
