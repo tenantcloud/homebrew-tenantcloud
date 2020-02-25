@@ -2,16 +2,15 @@ class Readline < Formula
   desc "Library for command-line editing"
   homepage "https://tiswww.case.edu/php/chet/readline/rltop.html"
   url "http://10.10.4.242:8081/readline-8.0.tar.gz"
-#  mirror "https://ftpmirror.gnu.org/readline/readline-7.0.tar.gz"
-  version "8.0.1"
+  version "8.0.4"
   sha256 "e339f51971478d369f8a053a330a190781acb9864cf4c541060f12078948e461"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
-    sha256 "5976a79f0dbd5ccb2a261f692763319d612309caa2b8cf703f209270764c657c" => :mojave
-    sha256 "0cc8fcf8ee733e41c40b859a09eb00f723222a40398fdd15d32891df1eca2eef" => :high_sierra
-    sha256 "ab3c966f4cae7d0f3ecc5688bb989820c3261f5ed547a08c84186ba7f53bdd9c" => :catalina
+    sha256 "6ae1c8e7c783f32bd22c6085caa4d838fed7fb386da7e40ca47b87ec9b1237d6" => :catalina
+    sha256 "29f7102a730ab39c8312cad1e7e439f6da2a67c452ce2b3380581eb185a5d8e8" => :mojave
+    sha256 "896a3d50ce8962ba56e853bdd590fadeabc00ab36475d143d6c2bea5cc15bb28" => :high_sierra
   end
 
   keg_only :shadowed_by_macos, <<~EOS
@@ -20,16 +19,15 @@ class Readline < Formula
     defaulting this GNU Readline installation to keg-only
   EOS
 
-  %w[
-    001 9ac1b3ac2ec7b1bf0709af047f2d7d2a34ccde353684e57c6b47ebca77d7a376
-    002 8747c92c35d5db32eae99af66f17b384abaca961653e185677f9c9a571ed2d58
-    003 9e43aa93378c7e9f7001d8174b1beb948deefa6799b6f581673f465b7d9d4780
-    004 f925683429f20973c552bff6702c74c58c2a38ff6e5cf305a8e847119c5a6b64
-    005 ca159c83706541c6bbe39129a33d63bbd76ac594303f67e4d35678711c51b753
+%w[
+    001 d8e5e98933cf5756f862243c0601cb69d3667bb33f2c7b751fe4e40b2c3fd069
+    002 36b0febff1e560091ae7476026921f31b6d1dd4c918dcb7b741aa2dad1aec8f7
+    003 94ddb2210b71eb5389c7756865d60e343666dfb722c85892f8226b26bb3eeaef
+    004 b1aa3d2a40eee2dea9708229740742e649c32bb8db13535ea78f8ac15377394c
   ].each_slice(2) do |p, checksum|
     patch :p0 do
-      url "https://ftp.gnu.org/gnu/readline/readline-7.0-patches/readline70-#{p}"
-      mirror "https://ftpmirror.gnu.org/readline/readline-7.0-patches/readline70-#{p}"
+      url "https://ftp.gnu.org/gnu/readline/readline-8.0-patches/readline80-#{p}"
+      mirror "https://ftpmirror.gnu.org/readline/readline-8.0-patches/readline80-#{p}"
       sha256 checksum
     end
   end
