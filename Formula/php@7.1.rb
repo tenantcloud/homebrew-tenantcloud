@@ -6,8 +6,8 @@ class PhpAT71 < Formula
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    sha256 "46df1961981fe57c163921f5ac363c1bcf2063993f654c45e7f7c731683bae56" => :mojave
-    sha256 "deee221834493c7dd87c0759c9ab3916f499a9761bb036270736b240f85c50f1" => :high_sierra
+    sha256 "0d349a06ffb681665c2c07efdc33cf9fe5494583024745208cce708ae6b121de" => :mojave
+    sha256 "2b3d9af13b1a65c06192ad3a2a8a2ccd06ed4dd2497fe8707c15a6fa812fea5f" => :high_sierra
     sha256 "8d5fe6ef069cd38913facb42b72b5597aaeb1d7eb05377ba53259e2d5dd1ba2e" => :catalina
   end
 
