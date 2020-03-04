@@ -1,26 +1,15 @@
 class Meson < Formula
   desc "Fast and user friendly build system"
   homepage "https://mesonbuild.com/"
-  revision 1
+  url "http://10.10.4.242:8081/meson-0.53.2.tar.gz"
+  sha256 "3e8f830f33184397c2eb0b651ec502adb63decb28978bdc84b3558d71284c21f"
   head "https://github.com/mesonbuild/meson.git"
 
-  stable do
-    url "http://10.10.4.242:8081/meson-0.49.0.tar.gz"
-    sha256 "fb0395c4ac208eab381cd1a20571584bdbba176eb562a7efa9cb17cace0e1551"
-
-    # Fix issues with Qt, remove in 0.49.1
-    # https://github.com/mesonbuild/meson/pull/4652
-    patch do
-      url "https://github.com/mesonbuild/meson/commit/c1e416ff.patch?full_index=1"
-      sha256 "3be708cc65d2b6e54d01e64031c83b06abad2eca1c658b97b2230d1aa7d1062b"
-    end
-  end
-
   bottle do
-    root_url "http://10.10.4.242:8081/bottles"
     cellar :any_skip_relocation
-    sha256 "c8015e3f47873ed46e930e3819a059b7b1624951bae2fcc0ba58de05d25966fe" => :mojave
-    sha256 "602c437f746f1eab0705836647d2cb6d09d004743945b92db69f87a52c50caac" => :high_sierra
+    sha256 "b2855c6300305417e6b709f9f4a197b6b9905255d947dd8263b14443c18a64a6" => :catalina
+    sha256 "b2855c6300305417e6b709f9f4a197b6b9905255d947dd8263b14443c18a64a6" => :mojave
+    sha256 "b2855c6300305417e6b709f9f4a197b6b9905255d947dd8263b14443c18a64a6" => :high_sierra
   end
 
   depends_on "tenantcloud/tenantcloud/ninja"
