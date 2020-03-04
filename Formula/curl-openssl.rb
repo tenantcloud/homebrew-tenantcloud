@@ -1,14 +1,14 @@
 class CurlOpenssl < Formula
   desc "Get a file from an HTTP, HTTPS or FTP server"
   homepage "https://curl.haxx.se/"
-  url "http://10.10.4.242:8081/curl-7.67.0.tar.bz2"
+  url "http://10.10.4.242:8081/curl-7.68.0.tar.bz2"
   sha256 "dd5f6956821a548bf4b44f067a530ce9445cc8094fd3e7e3fc7854815858586c"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    sha256 "84c070944750b1ab555478769569326a5af985de9242b64a4f59041cd51b4a3b" => :mojave
-    sha256 "d3cac8f1bd6593c58358e9e7c3b187182f9b7be5ed1edd4f372c4afb83eea052" => :high_sierra
-    sha256 "1513f434fa288a92307da632fc73f7e32fbc2f2f03441335415d8573a7205598" => :catalina
+   sha256 "c4dd2e8a36d2e4487d9d8c483d42be8b2aa3c5a0a326c10b35aeca82fccd8c0f" => :catalina
+    sha256 "1ef15e091d6e7071a0864195f371d297c0e2bbc39e58b5e0e193de924e4528a0" => :mojave
+    sha256 "736aca75c77ed54e1c15ede808b0630afa9bd1e166c6262a2223f673a51cac9d" => :high_sierra
   end
 
   keg_only :provided_by_macos
@@ -18,6 +18,11 @@ class CurlOpenssl < Formula
   depends_on "tenantcloud/tenantcloud/nghttp2"
   depends_on "tenantcloud/tenantcloud/openldap"
   depends_on "tenantcloud/tenantcloud/openssl@1.1"
+  depends_on "tenantcloud/tenantcloud/c-ares"
+  depends_on "tenantcloud/tenantcloud/libidn"
+  depends_on "tenantcloud/tenantcloud/libmetalink"
+  depends_on "tenantcloud/tenantcloud/libssh2"
+  depends_on "tenantcloud/tenantcloud/rtmpdump"
 
   def install
     # Allow to build on Lion, lowering from the upstream setting of 10.8
