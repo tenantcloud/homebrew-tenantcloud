@@ -2,7 +2,7 @@ class Openldap < Formula
   desc "Open source suite of directory software"
   homepage "https://www.openldap.org/software/"
   url "http://10.10.4.242:8081/openldap-2.4.49.tgz"
-  sha256 "d9523ffcab5cd14b709fcf3cb4d04e8bc76bb8970113255f372bc74954c6074d"
+  sha256 "e3b117944b4180f23befe87d0dcf47f29de775befbc469dcf4ac3dab3311e56e"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
