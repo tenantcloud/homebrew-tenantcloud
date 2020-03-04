@@ -11,12 +11,12 @@ class Libheif < Formula
     sha256 "076d461c72ca0651dd30f2a2ab7e701d4e39fbe2eebd895193eed785de37a9d3" => :high_sierra
   end
 
-  depends_on "pkg-config" => :build
-  depends_on "jpeg"
-  depends_on "libde265"
-  depends_on "libpng"
-  depends_on "shared-mime-info"
-  depends_on "x265"
+  depends_on "tenantcloud/tenantcloud/pkg-config" => :build
+  depends_on "tenantcloud/tenantcloud/jpeg"
+  depends_on "tenantcloud/tenantcloud/libde265"
+  depends_on "tenantcloud/tenantcloud/libpng"
+  depends_on "tenantcloud/tenantcloud/shared-mime-info"
+  depends_on "tenantcloud/tenantcloud/x265"
 
   def install
     system "./configure", "--disable-dependency-tracking",
