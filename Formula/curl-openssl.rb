@@ -2,11 +2,11 @@ class CurlOpenssl < Formula
   desc "Get a file from an HTTP, HTTPS or FTP server"
   homepage "https://curl.haxx.se/"
   url "http://10.10.4.242:8081/curl-7.68.0.tar.bz2"
-  sha256 "dd5f6956821a548bf4b44f067a530ce9445cc8094fd3e7e3fc7854815858586c"
+  sha256 "207f54917dd6a2dc733065ccf18d61bb5bebeaceb5df49cd9445483e8623eeb9"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-   sha256 "c4dd2e8a36d2e4487d9d8c483d42be8b2aa3c5a0a326c10b35aeca82fccd8c0f" => :catalina
+    sha256 "c4dd2e8a36d2e4487d9d8c483d42be8b2aa3c5a0a326c10b35aeca82fccd8c0f" => :catalina
     sha256 "1ef15e091d6e7071a0864195f371d297c0e2bbc39e58b5e0e193de924e4528a0" => :mojave
     sha256 "736aca75c77ed54e1c15ede808b0630afa9bd1e166c6262a2223f673a51cac9d" => :high_sierra
   end
