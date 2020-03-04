@@ -1,14 +1,16 @@
 class Python < Formula
   desc "Interpreted, interactive, object-oriented programming language"
   homepage "https://www.python.org/"
-  url "http://10.10.4.242:8081/Python-3.7.2.tgz"
-  sha256 "f09d83c773b9cc72421abba2c317e4e6e05d919f9bcf34468e192b6a6c8e328d"
+  url "http://10.10.4.242:8081/Python-3.7.6.tar.xz"
+  sha256 "55a2cce72049f0794e9a11a84862e9039af9183603b78bc60d89539f82cf533f"
+  revision 1
   head "https://github.com/python/cpython.git"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    sha256 "ea3a8b291cfcf494788dc5bd7cde446d2de49ed2d252ba721a25dea0dc177ebb" => :mojave
-    sha256 "00d1d9e326cff16943a226956a851c47069631ea6a352aac0735e2959e0379dd" => :high_sierra
+    sha256 "3871ef8b53270576c46489ae397f245b84772c405085238790cf5faa1853b33a" => :catalina
+    sha256 "643d627c2b4fc03a3286c397d299284ef8ce2d4a832737e41175f297d4f0862e" => :mojave
+    sha256 "3504f29ae0366d08fc025cfe2885cd2e685f74ab041a341a393d3b6967f139d7" => :high_sierra
   end
 
   # setuptools remembers the build flags python is built with and uses them to
