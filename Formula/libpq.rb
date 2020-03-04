@@ -3,7 +3,6 @@ class Libpq < Formula
   homepage "https://www.postgresql.org/docs/11/static/libpq.html"
   url "http://10.10.4.242:8081/postgresql-12.2.tar.bz2"
   sha256 "ad1dcc4c4fc500786b745635a9e1eba950195ce20b8913f50345bb7d5369b5de"
-  revision 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
