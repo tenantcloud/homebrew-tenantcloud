@@ -1,15 +1,15 @@
 class Libpq < Formula
   desc "Postgres C API library"
   homepage "https://www.postgresql.org/docs/11/static/libpq.html"
-  url "http://10.10.4.242:8081/postgresql-12.1.tar.bz2"
-  sha256 "a09bf3abbaf6763980d0f8acbb943b7629a8b20073de18d867aecdb7988483ed"
+  url "http://10.10.4.242:8081/postgresql-12.2.tar.bz2"
+  sha256 "ad1dcc4c4fc500786b745635a9e1eba950195ce20b8913f50345bb7d5369b5de"
   revision 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    sha256 "5afb0e937bf519808dffe071d58222e5fe7f36e93baa14b7bc7728078ca65845" => :mojave
-    sha256 "9c530ec6a94fcd63447daed913e38cd58027655d8a97511391e882f2b39cdc1f" => :high_sierra
-    sha256 "7091cf8b116e4320adb38a78a7cfe09676db01c6ab20775039352bcc7627cccb" => :catalina
+    sha256 "64bab543c341a2e26246aa434c8ef27c48985f397996a975751f2c5ea91cd3c3" => :catalina
+    sha256 "a5018ed3a4e60e321d1d5d10eb87616243e80c81673b4e59bbff294a24f5cef9" => :mojave
+    sha256 "9ac9a6f2272f22ae16855337288b156b70ae327624cdf8ddfb73cabd78fe783f" => :high_sierra
   end
 
   keg_only "conflicts with postgres formula"
