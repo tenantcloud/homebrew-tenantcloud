@@ -1,14 +1,16 @@
 class Httpd < Formula
   desc "Apache HTTP server"
   homepage "https://httpd.apache.org/"
-  url "http://10.10.4.242:8081/httpd-2.4.37.tar.bz2"
-  sha256 "3498dc5c6772fac2eb7307dc7963122ffe243b5e806e0be4fb51974ff759d726"
+  url "http://10.10.4.242:8081/httpd-2.4.41.tar.bz2"
+  sha256 "133d48298fe5315ae9366a0ec66282fa4040efa5d566174481077ade7d18ea40"
   revision 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    sha256 "a87d9e50fc2685fac96a452d0b717d25a0ca498af1824992e40c2eb634c162e4" => :mojave
-    sha256 "135f8207e6f84f887ad6a0e663fdb379a137e12473b495734c78107af94e7f03" => :high_sierra
+    sha256 "c532f46853817d18cfaeadecf1ec4e7b47a57b80eee3d01272aaa99a16c93bf6" => :catalina
+    sha256 "9f9969abde4a61949b0279f68d6fcc616d1546dd2c1b4fd61012bde1f5d27ee8" => :mojave
+    sha256 "143af690fd1f26f07e79009da6e674a0cb56c190f6fb486f9e61f82a5ab36a0a" => :high_sierra
+    sha256 "9a085a0b728b5bc75bda265d7d4c5360187038eb339c43a681d789599b814dcf" => :sierra
   end
 
   depends_on "tenantcloud/tenantcloud/apr"
