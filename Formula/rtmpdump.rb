@@ -10,9 +10,14 @@ class Rtmpdump < Formula
   bottle do
     cellar :any
     sha256 "f39d714005d28ed61728832877433a68dd256796bc225bac68b505b2c1d97ef4" => :catalina
+    sha256 "97cf25d61d474c2115f6448940f924324d630b60776396398662b1368b4544da" => :mojave
+    sha256 "7e95dc18fc03a6c1f19385e1507448f23e2e570c9b3ad60bd3fbc05c65295fb8" => :high_sierra
+    sha256 "2118d007922d98ae71169be417106f594636e6ff979611b9e51dd2cf09c002b7" => :sierra
   end
 
-  depends_on "openssl@1.1"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
+  
+  uses_from_macos "zlib"
 
   conflicts_with "flvstreamer", :because => "both install 'rtmpsrv', 'rtmpsuck' and 'streams' binary"
 
