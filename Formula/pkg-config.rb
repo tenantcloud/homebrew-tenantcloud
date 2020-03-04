@@ -10,8 +10,8 @@ class PkgConfig < Formula
     root_url "http://10.10.4.242:8081/bottles"
     rebuild 1
     sha256 "c0a6927c8e404f6db8b14d6644a218b22ddb0d27be1fa0a69d15bf0d9a6875ae" => :catalina
-    sha256 "85e5bbffb3424f22cd1bf54b69161110481bab100f9abea54e0a0f00fcf761b9" => :mojave
-    sha256 "f1b29fb5388dccab0fcaf665ab43d308ee51816b24262417bf83a686b6e308ae" => :high_sierra
+    sha256 "dcfcba723621eee085ddd5ebadc41fb8787a4717b9686f5288281633a830ac5e" => :mojave
+    sha256 "b6c0b7344ea89558f5d98711625e00414dc2be53af23c9ee8fcb07554f1736ac" => :high_sierra
   end
 
   def install
