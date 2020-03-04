@@ -19,8 +19,8 @@ class CurlOpenssl < Formula
   depends_on "tenantcloud/tenantcloud/openldap"
   depends_on "tenantcloud/tenantcloud/openssl@1.1"
   depends_on "tenantcloud/tenantcloud/c-ares"
-  depends_on "tenantcloud/tenantcloud/libidn"
-  depends_on "tenantcloud/tenantcloud/libmetalink"
+  depends_on "libidn"
+  depends_on "libmetalink"
   depends_on "tenantcloud/tenantcloud/libssh2"
   depends_on "tenantcloud/tenantcloud/rtmpdump"
 
