@@ -6,7 +6,7 @@ class Libssh2 < Formula
   revision 1
 
   bottle do
-    cellar :any
+    root_url "http://10.10.4.242:8081/bottles"
     sha256 "2c4dcf8149663f9a133deac5bc42ce308d1ced90227cac391ca30b0ab2d381f9" => :catalina
     sha256 "9705f2a153a854b15bff89663eca46dd211f5fc025031b9851d64874f83c8f53" => :mojave
     sha256 "22327eb5bbff660935db0c5106d5a43069ee23e5cb33d5125bad4e144e83ee34" => :high_sierra
