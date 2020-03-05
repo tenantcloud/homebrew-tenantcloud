@@ -6,7 +6,7 @@ class Sqlite < Formula
   sha256 "62284efebc05a76f909c580ffa5c008a7d22a1287285d68b7825a2b6b51949ae"
 
   bottle do
-    cellar :any
+    root_url "http://10.10.4.242:8081/bottles"
     sha256 "e09e8c96db88178e4f47b0cdab6477c46fa582326900ec9309c3ce1b9f7ff9aa" => :catalina
     sha256 "db7e3a6498bfdb4b4ceb8e8416020e2ad70de14975437f2e2a027485daeb2202" => :mojave
     sha256 "c49ef2494ec483a37895a7ba454c90b6e280e8b0a0db52399c9842617c150cab" => :high_sierra
