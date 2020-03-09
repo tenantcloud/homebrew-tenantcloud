@@ -24,7 +24,7 @@ class Webp < Formula
 
   def install
     system "./autogen.sh" if build.head?
-    system "./configure", "--prefix=#{prefix}",
+    system "./configure", "--prefix=#{#opt_prefix}",
                           "--disable-dependency-tracking",
                           "--disable-gif",
                           "--disable-gl",
