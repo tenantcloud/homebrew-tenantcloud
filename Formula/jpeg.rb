@@ -16,7 +16,8 @@ class Jpeg < Formula
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
-    system "make", "install"  end
+    system "make", "install"
+  end
 
   test do
     system "#{bin}/djpeg", test_fixtures("test.jpg")
