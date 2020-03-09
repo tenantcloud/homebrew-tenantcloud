@@ -14,7 +14,7 @@ class Jpeg < Formula
   def install
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
-                          "--prefix=#{v = pkg_version}"
+                          "--prefix=#{#opt_prefix}"
     system "make", "install"
   end
 
