@@ -1,10 +1,11 @@
 class Webp < Formula
   desc "Image format providing lossless and lossy compression for web images"
   homepage "https://developers.google.com/speed/webp/"
-  url "http://10.10.4.242:8081/libwebp-1.1.0.tar.gz"
+  url "http://10.10.4.242:8081/webp-1.1.0.tar.gz"
   sha256 "98a052268cc4d5ece27f76572a7f50293f439c17a98e67c4ea0c7ed6f50ef043"
 
   bottle do
+    root_url "http://10.10.4.242:8081/bottles"
     cellar :any
     sha256 "27c76a7054277ff5a2e844c5996fc731d8644acbaaa505d35dba42c4a48a0c51" => :catalina
     sha256 "819c76cbf75c1d1d51db88602b69a9d9cd24975cc65834a9eb5a804c4b96ee35" => :mojave
