@@ -7,8 +7,8 @@ class Jemalloc < Formula
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
-    sha256 "be3515eabe8dcdfe892d259f738b5263ac46721e56b2439c523464607ff552e4" => :mojave
-    sha256 "aa1fa19d21dda2217c2d62c43dbee14137dfadb79551513aedb401e9ba150797" => :high_sierra
+    sha256 "9fbc2052929cedb26b55bf21d0ac539d8ec153d138fde9dbd57e8bf9ed943b81" => :mojave
+    sha256 "8da348f2bc2a3d90e55fb0121b75e3581212e776e5f088f67be1005164917b55" => :high_sierra
     sha256 "13080a13f5e1a0699adaed5ba9906616850c2e8a75a829f8be6a2e6183fb16e5" => :catalina
   end
 
