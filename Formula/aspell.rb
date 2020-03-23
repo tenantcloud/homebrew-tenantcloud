@@ -8,8 +8,8 @@ class Aspell < Formula
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    sha256 "f0264ded1cf174eb37c8a4175bc5f900d8abbe2d06e7f8109aa96106dd044f25" => :mojave
-    sha256 "d5927b312520252d7634902269336fe28148dac0d986e7bb0883327233462f01" => :high_sierra
+    sha256 "756d2f24409150b932043544af99bc1c2ea242299174ab89a2d06c7878812af8" => :mojave
+    sha256 "9bbb8be505d953395bcccde4712cf85792c6bf03af535cc553783361476ddddb" => :high_sierra
     sha256 "f34a5b53fa80f6f0ea3cef83d04eceed93f918153463e0b77a596374a842249d" => :catalina
   end
 
