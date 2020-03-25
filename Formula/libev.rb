@@ -1,16 +1,15 @@
 class Libev < Formula
   desc "Asynchronous event library"
   homepage "http://software.schmorp.de/pkg/libev.html"
-  url "http://10.10.4.242:8081/libev-4.31.tar.gz"
-#  mirror "https://fossies.org/linux/misc/libev-4.24.tar.gz"
-  sha256 "ed855d2b52118e32c0c1a6a32bd18c97f9e6711ca511f5ee12de3b9eccc66e5a"
+  url "http://10.10.4.242:8081/libev-4.33.tar.gz"
+  sha256 "507eb7b8d1015fbec5b935f34ebed15bf346bed04a11ab82b8eee848c4205aea"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
     cellar :any
-    sha256 "ed173bfc28e6632e73b3a9aabcc999fff5cc8aab178ae94ae2a5df16f3660cf0" => :mojave
-    sha256 "d6ff53dbbeb1f78dc213e04b76c7ec033b32022017eb4eb213b68f9bb91d0da1" => :high_sierra
-    sha256 "3170164f0d6e07e06a0cb579696c8074a1167c15350d2e266ba1744a9e905ab0" => :catalina
+    sha256 "e5481e2ba48282bffb5ecc059f0ddddd9807400593e849ed4b48b1fed3a14698" => :catalina
+    sha256 "f6cfb8c6bb1219f4a54d36113ada7cc7e1e446d5a207bc77d69ac30d9cfe391f" => :mojave
+    sha256 "f623fc2f4dc3a0980b4733945eb2025cd40636a6d4f5e5d75ae5f89e0b7b07bd" => :high_sierra
   end
 
   def install
