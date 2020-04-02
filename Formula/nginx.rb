@@ -14,8 +14,8 @@ class Nginx < Formula
     sha256 "865acfbcf15641757a278127cb3a70ed500f3220b4708e10ecafc4f87192016a" => :high_sierra
   end
 
-  depends_on "openssl@1.1"
-  depends_on "pcre"
+  depends_on "tenantcloud/tenantcloud/openssl@1.1"
+  depends_on "tenantcloud/tenantcloud/pcre"
 
   def install
     # keep clean copy of source for compiling dynamic modules e.g. passenger
