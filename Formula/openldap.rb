@@ -1,14 +1,14 @@
 class Openldap < Formula
   desc "Open source suite of directory software"
   homepage "https://www.openldap.org/software/"
-  url "http://10.10.4.242:8081/openldap-2.4.49.tgz"
-  sha256 "e3b117944b4180f23befe87d0dcf47f29de775befbc469dcf4ac3dab3311e56e"
+  url "http://10.10.4.242:8081/openldap-2.4.50.tgz"
+  sha256 "5cb57d958bf5c55a678c6a0f06821e0e5504d5a92e6a33240841fbca1db586b8"
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    sha256 "26efb37f53ae1a3815213adf9ab815c66b7197a3d212f994dd4e5b4140cf3e4e" => :catalina
-    sha256 "b1572831c24149585e73eaafbc08dc66d9edfca69f72cdeaaabf1e9c4b2ddda1" => :mojave
-    sha256 "eb9c40191d88785247026a699bd6fe0e2e9e669395d814d7d1be430843a92b05" => :high_sierra
+    sha256 "c0f1fe7a472cba83a584bd574ba2a4d8e04b73fac95259855ee8697359f7e117" => :catalina
+    sha256 "b4273ace070b3f6afb965b0f2c9d43524a38d1521b55febe84833586a5d773fb" => :mojave
+    sha256 "fe64b6a62c8fddfa647f8e48ad233ee09514cc0bc7ba43058b85b0809e4cfab2" => :high_sierra
   end
 
   keg_only :provided_by_macos
