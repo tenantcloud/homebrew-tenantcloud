@@ -1,15 +1,15 @@
 class Glib < Formula
   desc "Core application library for C"
   homepage "https://developer.gnome.org/glib/"
-  url "http://10.10.4.242:8081/glib-2.64.1.tar.xz"
-  sha256 "17967603bcb44b6dbaac47988d80c29a3d28519210b28157c2bd10997595bbc7"
+  url "http://10.10.4.242:8081/glib-2.64.2.tar.xz"
+  sha256 "9a2f21ed8f13b9303399de13a0252b7cbcede593d26971378ec6cb90e87f2277"
   revision 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    sha256 "08a55a8645d8fcea984bacb09c991115fe346a598f33d4fc4a9d583a164921c9" => :catalina
-    sha256 "42138d5d30d5eab37f17c75e8b191034c175b615a6777021460365be90b6f49a" => :mojave
-    sha256 "3abd649cb9c2c8f0bfb5a21bab86353078dbf2faeb2323f8051236b27c9bc1aa" => :high_sierra
+    sha256 "b8e8a0f1229f7094233832516f5aad725c1447a74cc1ca342b69da9b7a5aed9f" => :catalina
+    sha256 "4ac9833acd0b2e6f8aa81bc426db78bcf2f4783f4788006d329d65c29b1bc561" => :mojave
+    sha256 "b01fb6863b96a8b865ce5c60f18d3d9bdaeb1faa6ee499910f6f51b733c41c24" => :high_sierra
   end
 
   # autoconf, automake and libtool can be removed when
