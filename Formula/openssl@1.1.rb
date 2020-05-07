@@ -1,15 +1,15 @@
 class OpensslAT11 < Formula
   desc "Cryptography and SSL/TLS Toolkit"
   homepage "https://openssl.org/"
-  url "http://10.10.4.242:8081/openssl-1.1.1f.tar.gz"
-  sha256 "186c6bfe6ecfba7a5b48c47f8a1673d0f3b0e5ba2e25602dd23b629975da3f35"
+  url "http://10.10.4.242:8081/openssl-1.1.1g.tar.gz"
+  sha256 "ddb04774f1e32f0c49751e21b67216ac87852ceb056b75209af2443400636d46"
   version_scheme 1
 
   bottle do
     root_url "http://10.10.4.242:8081/bottles"
-    sha256 "724cd97c269952cdc28e24798e350fcf520a32c5985aeb26053ce006a09d8179" => :catalina
-    sha256 "25ab844d2f14fc85c7f52958b4b89bdd2965bbd9c557445829eff6473f238744" => :mojave
-    sha256 "27f26e2442222ac0565193fe0b86d8719559d776bcdd070d6113c16bb13accf6" => :high_sierra
+    sha256 "1926679569c6af5337de812d86f4dad2b21ff883ad3a5d2cd9e8836ac5ac7ffe" => :catalina
+    sha256 "5c9d113393ff3efc95e5509175305fc9304fba35390a61915ed2864941c423f2" => :mojave
+    sha256 "eebad96faa46489dc8bf8502b16ec0192f5ff9d803794c9744ad50352bfca0f7" => :high_sierra
   end
 
   keg_only :provided_by_macos,
